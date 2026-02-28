@@ -16,7 +16,7 @@ const app = express();
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:5174',
-  'https://mern-admin-xyz.vercel.app', // Replace with your actual Vercel URL
+  // Add your Vercel URL here once deployed
 ];
 
 app.use(cors({
