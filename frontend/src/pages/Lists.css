@@ -1,0 +1,255 @@
+.lists-container {
+  max-width: 1400px;
+}
+
+.upload-section {
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+.dropzone {
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  padding: 48px 32px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background-color: #fafbfc;
+  cursor: pointer;
+}
+
+.dropzone.drag-active {
+  border-color: var(--primary);
+  background-color: rgba(26, 35, 126, 0.05);
+}
+
+.dropzone svg {
+  margin: 0 auto 16px;
+  color: var(--text-secondary);
+}
+
+.dropzone-text {
+  font-size: 15px;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.dropzone-or {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 12px 0;
+}
+
+.browse-btn {
+  padding: 10px 24px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.browse-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.file-selected {
+  padding: 16px;
+  background-color: var(--success-bg);
+  border-radius: var(--radius);
+  display: inline-block;
+  min-width: 280px;
+}
+
+.file-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.file-size {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.remove-file-btn {
+  padding: 6px 16px;
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.remove-file-btn:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+.upload-note {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin: 12px 0 20px;
+  text-align: center;
+}
+
+.upload-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.upload-btn:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+}
+
+.upload-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.lists-section {
+  margin-top: 32px;
+}
+
+.loading-state {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+}
+
+.empty-state {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.empty-state svg {
+  margin: 0 auto 20px;
+  color: var(--text-secondary);
+  opacity: 0.5;
+}
+
+.empty-state h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.lists-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.list-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid;
+  overflow: hidden;
+}
+
+.list-card-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.agent-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.agent-email {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.contact-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.list-table-wrapper {
+  overflow-x: auto;
+}
+
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.list-table thead {
+  background-color: #f8f9fa;
+}
+
+.list-table th {
+  padding: 12px 24px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.list-table tbody tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.list-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.list-table tbody tr:nth-child(even) {
+  background-color: #fafbfc;
+}
+
+.list-table tbody tr:hover {
+  background-color: #f5f6f8;
+}
+
+.list-table td {
+  padding: 12px 24px;
+  font-size: 13px;
+  color: var(--text-primary);
+}

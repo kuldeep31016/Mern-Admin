@@ -1,0 +1,157 @@
+.agents-container {
+  max-width: 1400px;
+}
+
+.agents-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.agents-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.add-agent-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.add-agent-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.add-agent-btn svg {
+  flex-shrink: 0;
+}
+
+.agents-table-wrapper {
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.loading-state {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.empty-state {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.empty-state svg {
+  margin: 0 auto 20px;
+  color: var(--text-secondary);
+  opacity: 0.5;
+}
+
+.empty-state h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.empty-state p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.empty-action-btn {
+  padding: 10px 24px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.empty-action-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.agents-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.agents-table thead {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid var(--border);
+}
+
+.agents-table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.agents-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.2s ease;
+}
+
+.agents-table tbody tr:nth-child(even) {
+  background-color: #fafbfc;
+}
+
+.agents-table tbody tr:hover {
+  background-color: #f5f6f8;
+}
+
+.agents-table td {
+  padding: 14px 16px;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.agent-name {
+  font-weight: 500;
+}
+
+.delete-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: var(--accent);
+  color: white;
+}
+
+.delete-btn svg {
+  flex-shrink: 0;
+}
